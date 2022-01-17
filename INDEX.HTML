@@ -13,6 +13,8 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
+    <!-- FONT-AWESOME -->
+         <script src="https://kit.fontawesome.com/95c244890e.js" crossorigin="anonymous"></script>
     <title>TO-DO APPLICATION</title>
   </head>
   <body>
@@ -21,7 +23,7 @@
         <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
             <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
                 <svg class="bi me-2" width="40" height="32">
-                    <use xlink:href="#bootstrap"></use>
+                    
                 </svg>
                 <img src="./logo.png" alt=""><h1 id="tital">TO-DO APPLICATION</h1>
             </a>
@@ -30,6 +32,20 @@
         </header>
     </div>
       <!-- HEADER END -->
+      <!-- START LIST -->
+       <center>
+           <input id="input" placeholder="ENTER TODOS" type="text"> 
+           <button onclick="addTodo()" id="add"><i class="fas fa-plus-circle"></i></button>
+           <button onclick="deleteAllTodo()" id="deleteAll"><i class="fas fa-trash"></i></i></button>
+           <br>
+           <div>
+               <ul id="ul">
+                   
+               </ul>
+           </div>
+       </center>
+
+      <!-- END LIST -->
   </body>
   <!-- link bootstrap js -->
   <script
